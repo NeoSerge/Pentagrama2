@@ -90,7 +90,7 @@ public class LoadScenes : MonoBehaviour
     public void LoadScene()
     {
 
-        StartCoroutine(LoadPortal());
+        //StartCoroutine(LoadPortal());
     }
 
     public void LoadLobby()

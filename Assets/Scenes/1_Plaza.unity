@@ -3252,6 +3252,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d88a9ad9f502ca46a1c81f1852540df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultRooms:
+  - name: 1_Plaza
+    sceneIndex: 0
+    maxPlayer: 10
+  plaza: 1
 --- !u!4 &135994114
 Transform:
   m_ObjectHideFlags: 0
@@ -59740,7 +59745,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2050044516408940428
 MonoBehaviour:
   m_ObjectHideFlags: 0
