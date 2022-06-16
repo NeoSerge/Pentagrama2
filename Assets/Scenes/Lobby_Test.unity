@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2331076, g: 0.23627803, b: 0.27289605, a: 1}
+  m_IndirectSpecularColor: {r: 0.23286882, g: 0.23664352, b: 0.27205473, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17401,19 +17401,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultRooms:
   - name: 3_VR_Disco
-    sceneIndex: 2
+    sceneIndex: 1
     maxPlayer: 10
   - name: 4_Bar
-    sceneIndex: 3
+    sceneIndex: 2
     maxPlayer: 10
   - name: 5_Escenary
-    sceneIndex: 4
+    sceneIndex: 3
     maxPlayer: 10
   - name: 6_Kafe
-    sceneIndex: 5
+    sceneIndex: 4
     maxPlayer: 10
   - name: 7_Primavera
-    sceneIndex: 6
+    sceneIndex: 5
     maxPlayer: 10
   plaza: 0
 --- !u!1 &9038644436253704895

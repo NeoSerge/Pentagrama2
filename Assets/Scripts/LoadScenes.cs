@@ -79,6 +79,7 @@ public class LoadScenes : MonoBehaviour
         }
 
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        //LoadAvatar();
     }
 
 
@@ -140,6 +141,12 @@ public class LoadScenes : MonoBehaviour
 
     public void LoadAvatar()
     {
+        
+        if (PlayerPrefs.GetString("avatar") != null)
+        {
+            avatarURL = PlayerPrefs.GetString("avatar");
+        }
+        
         avatarURL = inputFieldURL.text;
         AvatarLoader avatarLoader = new AvatarLoader();
         avatarLoader.LoadAvatar(avatarURL, AvatarImportedCallback, AvatarLoadedCallback);
