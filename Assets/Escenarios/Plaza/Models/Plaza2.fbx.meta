@@ -66,7 +66,7 @@ ModelImporter:
     importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
-    swapUVChannels: 1
+    swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
@@ -79,9 +79,9 @@ ModelImporter:
     optimizeBones: 0
     meshOptimizationFlags: -1
     indexFormat: 0
-    secondaryUVAngleDistortion: 29
-    secondaryUVAreaDistortion: 15
-    secondaryUVHardAngle: 121
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1

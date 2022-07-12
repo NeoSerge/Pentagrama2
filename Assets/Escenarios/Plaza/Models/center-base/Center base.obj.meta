@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 90b4435f17166c940a2373bdf560289e
 ModelImporter:
-  serializedVersion: 21202
+  serializedVersion: 20200
   internalIDToNameTable: []
   externalObjects:
   - first:
@@ -19,7 +19,6 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -49,9 +48,8 @@ ModelImporter:
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
-    nodeNameCollisionStrategy: 0
     fileIdsGeneration: 2
-    swapUVChannels: 1
+    swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
@@ -61,12 +59,11 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
-    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
-    secondaryUVAngleDistortion: 32
-    secondaryUVAreaDistortion: 15
-    secondaryUVHardAngle: 120
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
@@ -81,7 +78,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human: []
@@ -100,7 +97,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1

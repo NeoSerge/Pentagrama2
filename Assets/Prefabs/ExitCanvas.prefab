@@ -30,6 +30,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: 0.84590244, z: -0, w: 0.5333376}
   m_LocalPosition: {x: 0, y: 0, z: -4.01}
   m_LocalScale: {x: 0.10339039, y: 0.10339039, z: 0.10339039}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6261863412735817416}
   - {fileID: 6261863412960629959}
@@ -84,7 +85,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &6261863411841206761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +150,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6261863412735817416}
   m_RootOrder: 0
@@ -229,6 +231,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.069328584, y: 0.069328584, z: 0.069328584}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6261863411964974223}
   m_Father: {fileID: 6261863411841206766}
@@ -360,6 +363,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.8459025, z: 0, w: 0.53333765}
   m_LocalPosition: {x: 10.707657, y: -86.63388, z: 50.37402}
   m_LocalScale: {x: 9.672078, y: 9.672079, z: 9.672078}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6261863411841206766}
   m_RootOrder: 1
@@ -376,6 +380,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c010836055d3c544ab7709a9547185d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scriptCompleto: 0
+  sceneName: 
   moveToPortal: {fileID: 0}
   PartnerURL: 
   inputFieldURL: {fileID: 0}
@@ -391,3 +397,8 @@ MonoBehaviour:
   outfitFootwear: {fileID: 0}
   outfitTop: {fileID: 0}
   outfitTeeth: {fileID: 0}
+  canvasPontAeri: {fileID: 0}
+  canvasBar: {fileID: 0}
+  canvasEscenary: {fileID: 0}
+  canvasKafe: {fileID: 0}
+  canvasPrimavera: {fileID: 0}
