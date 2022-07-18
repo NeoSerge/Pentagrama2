@@ -5,43 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Mirror/Examples/Chat/Scenes/Main.unity
-    guid: f4e8d4de4484e44bba666f2d1f66c73e
   - enabled: 1
-    path: Assets/Scenes/Lobby_Test.unity
-    guid: bcb3aef425028574d809c6d92ce6267f
-  - enabled: 0
-    path: Assets/Scenes/1_Plaza.unity
-    guid: fc68c8fcc0799844985ce949f2781133
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/assets-pre/Scenes/LoginScene.unity
+    guid: b3049d4882a276f4dbae81c84962e9ed
   - enabled: 1
-    path: Assets/Scenes/3_VR_Disco1.unity
-    guid: ba80b08ed77faeb42b72d84f916b3efe
-  - enabled: 0
-    path: Assets/Scenes/4_Bar.unity
-    guid: 2c4ae1f5b80bb754dabdd3d333ff0b7d
-  - enabled: 0
-    path: Assets/Scenes/5_Escenary.unity
-    guid: 2edff0ead61fae049b1f09b187e3f5cb
-  - enabled: 0
-    path: Assets/Scenes/6_Kafe.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/7_Primavera.unity
-    guid: 75d7e9842d4110a4db7b7e294202f043
-  - enabled: 0
-    path: Assets/Mirror/Examples/Room/Scenes/RoomScene.unity
-    guid: 48478f4d522f96945b8396f376299d3a
-  - enabled: 0
-    path: Assets/Mirror/Examples/Room/Scenes/OnlineScene.unity
-    guid: d7a6763559b31854586c9e49916273ef
-  - enabled: 0
-    path: Assets/Mirror/Examples/Room/Scenes/OfflineScene.unity
-    guid: 9e6f14982412b2545a0911ebaaa46a23
+    path: Assets/assets-pre/Scenes/HomeScene.unity
+    guid: 0870fdc5cf2f21e45bf2c5e0d8b1cbc5
+  - enabled: 1
+    path: Assets/assets-pre/Scenes/World_Outdoor.unity
+    guid: 5041d70b592f91c4c8b6824c2ef6484f
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c4286c4ddb84a734988f49696972ac54, type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d09e8e5415cf9524ab7c7eb6d6f7f7fd, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 0e1e9504901876a44b640338b6fdb62e, type: 2}
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: cb600b6e91401594186c86c9a5e3f51a, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6a8cbd4d5d9066649a78d7592b9cbbfb, type: 2}

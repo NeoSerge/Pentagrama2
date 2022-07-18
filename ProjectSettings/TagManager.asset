@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - XROrigin
-  - Moneda
+  - Floor
+  - BarMoneda
   layers:
   - Default
   - TransparentFX
@@ -13,8 +13,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Post Processing
-  - Head
+  - LocalAvatarBody
+  - 
   - 
   - 
   - 

@@ -722,11 +722,11 @@ MonoBehaviour:
   myRig: {fileID: 8938080785069953077}
   lobby: {x: -2, y: -3, z: 0}
   home: {x: 0, y: 6, z: -2}
-  barSpawn: {x: -247, y: 6, z: 8}
-  discoSpawn: {x: -387, y: 2, z: 0}
-  teatroSpawn: {x: -740, y: 4, z: 5}
-  conciertoSpawn: {x: -565.04, y: -4, z: -38}
-  festivalSpawn: {x: -1269.2, y: 2, z: 0}
+  barSpawn: {x: -231, y: 3.98, z: 7.51}
+  discoSpawn: {x: -392.32, y: 0.8, z: 18.44}
+  teatroSpawn: {x: -737.14, y: 0.8, z: 18.44}
+  conciertoSpawn: {x: -565, y: 46.51, z: -38}
+  festivalSpawn: {x: -3270, y: 177.16, z: 53.33}
   place: 
 --- !u!1 &5479094212229320849
 GameObject:
@@ -1306,6 +1306,7 @@ GameObject:
   - component: {fileID: 1209456076521547185}
   - component: {fileID: 8812584849607158466}
   - component: {fileID: 2234645120834211609}
+  - component: {fileID: 5592202512691243984}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1337,7 +1338,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1467,6 +1468,25 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
   m_HasMigratedActions: 1
+--- !u!114 &5592202512691243984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6618368038443944895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6363bba448bf64e60a763433f9ddf81b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _threshold: 0.26
+  _softKnee: 0.086
+  _radius: 2.75
+  _intensity: 0.18
+  _highQuality: 1
+  _antiFlicker: 1
+  _shader: {fileID: 4800000, guid: 5a711a01011934ebcb58ef5ad52159d6, type: 3}
 --- !u!1 &6754617044831059010
 GameObject:
   m_ObjectHideFlags: 0
