@@ -146,21 +146,14 @@ public class WebView: MonoBehaviour
             }
 
             function subscribe(event) {
-                // post message v1, this will be deprecated
-                if(event.data.endsWith('.glb')) {
-                    Unity.call(event.data);
-                }
-                // post message v2
-                else {
-                    const json = parse(event);
-                    const source = json.source;
+                const json = parse(event);
+                const source = json.source;
                     
-                    if (source !== 'readyplayerme') {
-                      return;
-                    }
-
-			        Unity.call(event.data);
+                if (source !== 'readyplayerme') {
+                    return;
                 }
+
+			    Unity.call(event.data);
 		    }
 
             function parse(event) {
@@ -205,7 +198,7 @@ public class WebView: MonoBehaviour
     }
 }
 
-public struct WebMessage
+public struct WebMessage2
 {
     public string type;
     public string source;

@@ -6,7 +6,7 @@ namespace ReadyPlayerMe
 {
     public class EditorWindowBase : EditorWindow
     {
-        public const string Version = "v1.8.0";
+        public const string Version = "v1.9.0";
 
         private const string BannerPath = "Assets/Plugins/Ready Player Me/Editor/RPM_EditorImage_Banner.png";
         private const string LovePath = "Assets/Plugins/Ready Player Me/Editor/RPM_EditorImage_Love.png";

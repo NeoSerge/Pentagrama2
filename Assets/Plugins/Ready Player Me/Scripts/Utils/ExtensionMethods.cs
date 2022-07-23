@@ -30,16 +30,16 @@ namespace ReadyPlayerMe
         #endregion
 
         #region Get Mesh
-        public enum MeshType 
-        { 
-            HeadMesh, 
+        public enum MeshType
+        {
+            HeadMesh,
             BeardMesh,
             TeethMesh
         }
 
-        private static readonly string[] HeadMeshNameFilter = { 
-            "Avatar_Renderer_Head", 
-            "Avatar_Renderer_Avatar" 
+        private static readonly string[] HeadMeshNameFilter = {
+            "Avatar_Renderer_Head",
+            "Avatar_Renderer_Avatar"
         };
 
         private static readonly string BeardMeshNameFilter = "Avatar_Renderer_Beard";
@@ -74,7 +74,7 @@ namespace ReadyPlayerMe
                     {
                         throw new Exception($"ExtensionMethods.GetMeshRenderer: {meshType} not found on {gameObject.name}. Make sure this method is called on a avatar game object.");
                     }
-                    else if(allChildren.Count > 1)
+                    else if (allChildren.Count > 1)
                     {
                         Debug.Log($"ExtensionMethods.GetMeshRenderer: {meshType} not found on {gameObject.name}.");
                     }

@@ -6,20 +6,27 @@ namespace ReadyPlayerMe
 {
     public class Postprocessor : AssetPostprocessor
     {
-        #region Animation
-        private const string AnimationAssetPath = "Assets/Plugins/Ready Player Me/Resources/Animations";
-        private const string AnimationTargetPath = "Assets/Plugins/Ready Player Me/Resources/AnimationTargets";
-
-        private const string MaleAnimationTargetName = "AnimationTargets/MaleAnimationTargetV2";
-        private const string FemaleAnimationTargetName = "AnimationTargets/FemaleAnimationTargetV2";
-
-        private static readonly string[] AnimationFiles = new string[]
+        static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
         {
-            "Assets/Plugins/Ready Player Me/Resources/Animations/Female/FemaleAnimationTargetV2@Breathing Idle.fbx",
-            "Assets/Plugins/Ready Player Me/Resources/Animations/Female/FemaleAnimationTargetV2@Walking.fbx",
-            "Assets/Plugins/Ready Player Me/Resources/Animations/Male/MaleAnimationTargetV2@Breathing Idle.fbx",
-            "Assets/Plugins/Ready Player Me/Resources/Animations/Male/MaleAnimationTargetV2@Walking.fbx"
-        };
+            foreach (string item in importedAssets)
+            {
+                if (item.Contains("RPM_EditorImage_"))
+                {
+                    AvatarLoaderEditorWindow.ShowWindow(false);
+                    UpdateAlwaysIncludedShaderList();
+                    return;
+                }
+            }
+        }
+
+        #region Animation Settings
+        private const string AnimationAssetPath = "Assets/Plugins/Ready Player Me/Resources/Animations";
+
+        private void OnPreprocessModel()
+        {
+            ModelImporter modelImporter = assetImporter as ModelImporter;
+            UpdateAnimationFileSettings(modelImporter);
+        }
 
         private void UpdateAnimationFileSettings(ModelImporter modelImporter)
         {
@@ -31,18 +38,6 @@ namespace ReadyPlayerMe
             }
 
             if (assetPath.Contains(AnimationAssetPath))
-            {
-                SetModelImportData();
-
-                bool isFemaleFolder = assetPath.Contains("Female");
-                GameObject animationTarget = Resources.Load<GameObject>(isFemaleFolder ? FemaleAnimationTargetName : MaleAnimationTargetName);
-
-                if (animationTarget != null)
-                {
-                    modelImporter.sourceAvatar = animationTarget.GetComponent<Animator>().avatar;
-                }
-            }
-            else if (assetPath.Contains(AnimationTargetPath))
             {
                 SetModelImportData();
             }
@@ -108,31 +103,9 @@ namespace ReadyPlayerMe
                     serializedGraphicsObject.ApplyModifiedProperties();
                 }
             }
-            
+
             AssetDatabase.SaveAssets();
         }
         #endregion
-
-        private void OnPreprocessModel()
-        {
-            ModelImporter modelImporter = assetImporter as ModelImporter;
-            UpdateAnimationFileSettings(modelImporter);
-            
-            UpdateAlwaysIncludedShaderList();
-        }
-
-        static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
-        {
-            foreach (string item in importedAssets)
-            {
-                if (item.Contains(MaleAnimationTargetName))
-                {
-                    for (int i = 0; i < AnimationFiles.Length; i++)
-                    {
-                        AssetDatabase.ImportAsset(AnimationFiles[i]);
-                    }
-                }
-            }
-        }
     }
 }

@@ -24,8 +24,8 @@ namespace ReadyPlayerMe
         protected const string Prefix = "Wolf3D_";
 
         // Animation avatars
-        protected const string MaleAnimationAvatarName = "AnimationAvatars/MaleAnimationAvatar";
-        protected const string FemaleAnimationAvatarName = "AnimationAvatars/FemaleAnimationAvatar";
+        protected const string MasculineAnimationAvatarName = "AnimationAvatars/MasculineAnimationAvatar";
+        protected const string FeminineAnimationAvatarName = "AnimationAvatars/FeminineAnimationAvatar";
 
         // Animation controller
         protected const string AnimatorControllerName = "Avatar Animator";
@@ -82,7 +82,7 @@ namespace ReadyPlayerMe
             }
         }
 
-        private string AnimationAvatarSource => avatarMetaData.IsOutfitMasculine() ? MaleAnimationAvatarName : FemaleAnimationAvatarName;
+        private string AnimationAvatarSource => avatarMetaData.IsOutfitMasculine() ? MasculineAnimationAvatarName : FeminineAnimationAvatarName;
 
         /// <summary>
         ///     Restructure avatar bones and add gender spesific animation avatar and animator controller.

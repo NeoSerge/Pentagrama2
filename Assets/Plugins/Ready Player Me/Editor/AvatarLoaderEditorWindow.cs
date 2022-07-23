@@ -3,24 +3,9 @@ using UnityEngine;
 
 namespace ReadyPlayerMe
 {
-    public class AvatarLoaderEditorWindowStarter : AssetPostprocessor
-    {
-        static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
-        {
-            foreach (string item in importedAssets)
-            {
-                if (item.Contains("RPM_EditorImage_"))
-                {
-                    AvatarLoaderEditorWindow.ShowWindow(false);
-                    return;
-                }
-            }
-        }
-    }
-
     public class AvatarLoaderEditorWindow : EditorWindowBase
     {
-        private const string AnimsPath = "/Plugins/Ready Player Me/Resources/Animations/Male";
+        private const string AnimsPath = "/Plugins/Ready Player Me/Resources/Animations";
 
         private const string UrlSaveKey = "UrlSaveKey";
         private const string VoiceToAnimSaveKey = "VoiceToAnimSaveKey";
